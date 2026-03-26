@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { FaGithub, FaGoogle, FaLinkedin } from "react-icons/fa";
 import avatar from "../assets/Avatar_250.jpg"
+import { SiGmail } from "react-icons/si";
 
 // Animated orbital rings component - SOLID borders with moving glowing dot
 const AnimatedRings = () => {
@@ -159,13 +160,12 @@ const ParticlesBg = () => {
 export default function Portfolio() {
 
   return (
-    <div className="mt-20" style={{ fontFamily: "'Sora', sans-serif" }}>
+    <div className="md:mt-20 mt-10 border border-red-700" style={{ fontFamily: "'Sora', sans-serif" }}>
       {/* Google Font */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Dancing+Script:wght@700&display=swap');
         .logo-font { font-family: 'Dancing Script', cursive; }
         .cursor-blink::after {
-          content: '|';
           animation: blink 0.8s step-end infinite;
           color: #cc00ff;
         }
@@ -185,9 +185,7 @@ export default function Portfolio() {
           transition: width 0.3s;
         }
         .nav-link:hover::after { width: 100%; }
-        .glow-text {
-          text-shadow: 0 0 30px rgba(153,0,255,0.6), 0 0 60px rgba(153,0,255,0.3);
-        }
+        
         .resume-btn {
           border: 1.5px solid #cc00ff;
           position: relative;
@@ -248,7 +246,7 @@ export default function Portfolio() {
               className="text-6xl md:text-8xl font-extrabold cursor-blink glow-text"
               style={{ background: "linear-gradient(135deg, #cc00ff 0%, #7700cc 50%, #aa00ff 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}
             >
-              Mohsin
+              mahin
             </h1>
           </div>
 
@@ -272,7 +270,7 @@ export default function Portfolio() {
           <div className="flex items-center gap-6 pt-2">
             <FaGithub size={34}></FaGithub>
             <FaLinkedin size={34}></FaLinkedin>
-            <FaGoogle size={34}></FaGoogle>
+           <a href="mailto:mdmohosin.web@gmail.com"><SiGmail size={34}></SiGmail></a>
           </div>
         </div>
 

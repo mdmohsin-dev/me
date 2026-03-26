@@ -3,21 +3,31 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const navLinks = <>
+        <li className="text-lg"><a href="">Home</a></li>
+        <li className="text-lg"><a href="">About</a></li>
+        <li className="text-lg"><a href="">Skills</a></li>
+        <li className="text-lg"><a href="">Projects</a></li>
+        <li className="text-lg md:hidden"><a href="">Download Resume</a></li>
+    </>
     return (
         <div className="fixed w-full z-50 bg-black">
             {/* NAVBAR */}
-            <nav className="relative z-50 flex items-center justify-between px-8 py-5 border-b border-white/5">
-                <div className="logo-font text-2xl font-bold" style={{ color: "#cc00ff" }}>
-                    Mohsin.
+            <nav className="relative flex items-center justify-between px-8 py-5 border-b border-white/5">
+                <div className="logo-font text-3xl font-bold" style={{ color: "#cc00ff" }}>
+                    mahin.
                 </div>
 
                 {/* Desktop nav */}
                 <div className="hidden md:flex items-center gap-10">
-                    {["ABOUT", "SKILLS", "PROJECTS", "CONTACT"].map((item) => (
+                    {/* {["ABOUT", "SKILLS", "PROJECTS", "CONTACT"].map((item) => (
                         <a key={item} href="#" className="nav-link text-white/80 hover:text-white transition-colors">
                             {item}
                         </a>
-                    ))}
+                    ))} */}
+                    <ul className="flex gap-10">
+                        {navLinks}
+                    </ul>
                 </div>
 
                 <button className="resume-btn hidden md:flex items-center gap-2 px-5 py-2 text-xs font-semibold tracking-widest text-white rounded-sm transition-all hover:text-purple-300">
@@ -39,13 +49,16 @@ const Navbar = () => {
 
             {/* Mobile menu */}
             {menuOpen && (
-                <div className="md:hidden relative z-50 bg-black/95 border-b border-purple-900/30 px-8 py-6 flex flex-col gap-5">
-                    {["ABOUT", "SKILLS", "PROJECTS", "CONTACT"].map((item) => (
-                        <a key={item} href="#" className="text-sm font-semibold tracking-widest text-white/80 hover:text-purple-400 transition-colors">
-                            {item}
-                        </a>
-                    ))}
-                </div>
+                // <div className="md:hidden relative z-50 bg-black/95 border-b border-purple-900/30 px-8 py-6 flex flex-col gap-5">
+                //     {["ABOUT", "SKILLS", "PROJECTS", "CONTACT"].map((item) => (
+                //         <a key={item} href="#" className="text-sm font-semibold tracking-widest text-white/80 hover:text-purple-400 transition-colors">
+                //             {item}
+                //         </a>
+                //     ))}
+                // </div>
+                <ul className="flex flex-col gap-5 p-6">
+                    {navLinks}
+                </ul>
             )}
         </div>
     );
