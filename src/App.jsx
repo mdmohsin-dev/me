@@ -1,4 +1,5 @@
 import './App.css'
+import About from './components/About'
 import Banner from './components/Banner'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -12,6 +13,7 @@ function App() {
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <Navbar></Navbar>
       <Banner></Banner>
+      <About></About>
       <TechCard></TechCard>
       <Projects></Projects>
       <Contact></Contact>

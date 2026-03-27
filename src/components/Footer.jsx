@@ -23,7 +23,7 @@ const Footer = () => {
                         <a href="mailto:mdmohosin.web@gmail.com"><SiGmail size={34}></SiGmail></a>
                     </div>
                 </div>
-                <div className="border-t border-dashed border-gray-400 my-12"></div>
+                <div className="border-t border-dashed border-gray-700 my-12"></div>
                 <p className='text-center'>&copy; {new Date().getFullYear()} Mohsin. All rights reserved.</p>
             </div>
         </div>

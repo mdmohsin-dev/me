@@ -103,7 +103,7 @@ export default function TechCard() {
 
     return (
         <div className="bg-[#101010] lg:mt-1 md:mt-30 mt-20">
-            <div className=" max-w-350 mx-auto py-14">
+            <div className="max-w-350 mx-auto py-14">
                 <SectionTitle title="tech stack"></SectionTitle>
                 <div className="pt-14">
                     <div className="grid grid-cols-9 gap-5">
