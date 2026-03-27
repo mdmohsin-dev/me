@@ -102,11 +102,11 @@ const techs = [
 export default function TechCard() {
 
     return (
-        <div className="bg-[#101010] lg:mt-1 md:mt-30 mt-20">
+         <div className="bg-[#101010] mt-32 scroll-mt-24" id="skills">
             <div className="max-w-350 mx-auto py-14">
                 <SectionTitle title="tech stack"></SectionTitle>
-                <div className="pt-14">
-                    <div className="grid grid-cols-9 gap-5">
+                <div className="lg:pt-14 md:pt-10 pt-6">
+                    <div className="grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-5">
                         {techs.map((tech) => (
                             <div className=" p-4 gap-2 flex flex-col"
                                 key={tech.name}>
@@ -121,6 +121,6 @@ export default function TechCard() {
                     </div>
                 </div>
             </div>
-        </div>
+       </div>
     );
 }

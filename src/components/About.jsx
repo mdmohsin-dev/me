@@ -3,13 +3,13 @@ import me from "../assets/me.jpeg"
 
 const About = () => {
     return (
-        <div>
+        <div className="md:pt-28 pt-16" id="about">
             <SectionTitle title="about me"></SectionTitle>
-            <div className="flex items-center justify-center p-6 font-mono max-w-350 mx-auto">
-                <div className="w-full flex gap-16">
+            <div className="flex items-center justify-center xl:px-5 md:px-7 px-5 font-mono max-w-350 mx-auto lg:mt-10 mt-7">
+                <div className="w-full flex flex-col lg:flex-row xl:gap-16 gap-10">
 
                     {/* Left Profile Card */}
-                    <div className="bg-[#111111] border border-gray-800 rounded-2xl overflow-hidden shadow-2xl w-1/3">
+                    <div className="bg-[#111111] border border-gray-800 rounded-2xl overflow-hidden shadow-2xl lg:w-1/3">
                         {/* Top accent line */}
                         <div className="h-1 bg-linear-to-r from-orange-500 via-blue-500 to-emerald-500"></div>
 
@@ -55,7 +55,7 @@ const About = () => {
                     </div>
 
                     {/* Right Terminal / Info Panel */}
-                    <div className="bg-[#0f0f0f] border border-gray-800 rounded-2xl p-8 shadow-2xl w-2/3">
+                    <div className="bg-[#0f0f0f] border border-gray-800 rounded-2xl md:p-8 p-3 shadow-2xl lg:w-2/3">
                         <div className="flex items-center gap-2 mb-6 text-gray-400">
                             <span className="text-purple-400">❯</span>
                             <span className="text-sm">user_profile.log</span>

@@ -4,15 +4,15 @@ import { useState } from "react";
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const navLinks = <>
-        <li className="text-lg"><a href="">Home</a></li>
-        <li className="text-lg"><a href="">About</a></li>
-        <li className="text-lg"><a href="">Skills</a></li>
-        <li className="text-lg"><a href="">Projects</a></li>
-        <li className="text-lg"><a href="">Contact</a></li>
-        <li className="text-lg md:hidden"><a href="">Download Resume</a></li>
+        <li className="text-lg"><a href="#home">Home</a></li>
+        <li className="text-lg"><a href="#about">About</a></li>
+        <li className="text-lg"><a href="#skills">Skills</a></li>
+        <li className="text-lg"><a href="#projetcs">Projects</a></li>
+        <li className="text-lg"><a href="#contact">Contact</a></li>
+        <li className="text-lg md:hidden"><a href="/Mohsin_Resume.pdf" target="_blank">Download Resume</a></li>
     </>
     return (
-        <div className="fixed w-full z-50 bg-black">
+        <div className="fixed top-0 w-full z-50 bg-black">
             {/* NAVBAR */}
             <nav className="relative flex items-center justify-between px-8 py-5 border-b border-white/5">
                 <div className="logo-font text-3xl font-bold" style={{ color: "#cc00ff" }}>
@@ -26,12 +26,12 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <button className="resume-btn hidden md:flex items-center gap-2 px-5 py-2 text-xs font-semibold tracking-widest text-white rounded-sm transition-all hover:text-purple-300">
+                <a href="/Mohsin_Resume.pdf" target="_blank" className="resume-btn hidden md:flex items-center gap-2 px-5 py-2 text-xs font-semibold tracking-widest text-white rounded-sm transition-all hover:text-purple-300">
                     Resume
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                     </svg>
-                </button>
+                </a>
 
                 {/* Mobile hamburger */}
                 <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>

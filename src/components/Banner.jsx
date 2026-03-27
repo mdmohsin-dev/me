@@ -160,7 +160,7 @@ const ParticlesBg = () => {
 export default function Portfolio() {
 
   return (
-    <div className="md:mt-20 mt-10 max-w-350 mx-auto" style={{ fontFamily: "'Sora', sans-serif" }}>
+    <div className="lg:pt-10 pt-28 max-w-350 mx-auto px-5" id="home" style={{ fontFamily: "'Sora', sans-serif" }}>
       {/* Google Font */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Dancing+Script:wght@700&display=swap');
@@ -201,9 +201,6 @@ export default function Portfolio() {
         }
         .resume-btn:hover::before { opacity: 1; }
         
-        @media (max-width: 768px) {
-          
-        }
         .profile-inner {
           position: absolute;
           inset: 15%;
@@ -253,16 +250,6 @@ export default function Portfolio() {
           <div className="space-y-1">
             <p className="text-white text-lg font-light">
               <span className="font-semibold text-white">Frontend Developer.</span>
-            </p>
-            <p className="text-white/80 text-lg font-light">
-              I create{" "}
-              <span
-                className="font-semibold"
-                style={{ background: "linear-gradient(90deg, #cc00ff, #ff66ff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}
-              >
-                Exciting Stuff
-              </span>{" "}
-              on the Internet.
             </p>
           </div>
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaDiscord, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaDiscord, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import contactImg from "../assets/ContactVector.png"
 import SectionTitle from "./SectionTitle";
@@ -15,25 +15,19 @@ const socialIcons = [
   },
   {
     id: "linkdein",
-    style: { bottom: "-15%", left: "50%" },
+    style: { top: "50%", left: "0%" },
     label: (
       <FaLinkedin size={24}></FaLinkedin>
     ),
     href: "https://www.linkedin.com/in/mdmohsin-dev/"
   },
   {
-    id: "facebook",
-    style: { top: "50%", left: "0%" },
-    label: (
-      <FaFacebook size={28}></FaFacebook>
-    ),
-  },
-  {
     id: "discord",
     style: { top: "50%", right: "-15%" },
     label: (
-      <FaDiscord size={26}></FaDiscord>
+      <FaGithub size={24}></FaGithub>
     ),
+    href:"https://github.com/mdmohsin-dev"
 
   }
 ];
@@ -103,7 +97,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-350 mx-auto lg:mt-1 md:mt-30 mt-20">
+    <div className="max-w-350 mx-auto lg:mt-32 md:mt-30 mt-20 scroll-mt-24" id="contact">
 
       <SectionTitle title="Contact"></SectionTitle>
 

@@ -17,7 +17,7 @@ const SectionTitle = ({title}) => {
                 {/* Center label */}
                 <div className="flex items-center gap-1 px-4">
                     <span className="text-3xl text-[#6d3fff] font-bold">{"<"}</span>
-                    <span className="text-xl font-semibold tracking-[0.2em] uppercase px-1.5">{title}</span>
+                    <span className="md:text-xl font-semibold tracking-[0.2em] uppercase px-1.5">{title}</span>
                     <span className="text-[#4f2bdb] text-4xl font-bold">/</span>
                     <span className="text-[#6d3fff] text-3xl font-bold">{">"}</span>
                 </div>

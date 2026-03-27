@@ -4,9 +4,9 @@ import me from "../assets/me.jpeg"
 
 const Footer = () => {
     return (
-        <div className='bg-[#101010] pt-20 pb-10'>
-            <div className='max-w-350 mx-auto'>
-                <div className='flex justify-between items-center'>
+        <div className='bg-[#101010] pt-20 pb-10 lg:mt-24'>
+            <div className='max-w-350 mx-auto px-6'>
+                <div className='flex flex-col md:flex-row md:gap-1 gap-10 justify-between items-center'>
 
                     <div className='flex items-center gap-3'>
                         <img className='w-16 h-16 rounded-full' src={me} alt="" />

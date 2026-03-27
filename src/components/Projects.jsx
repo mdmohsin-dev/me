@@ -36,13 +36,13 @@ const Projects = () => {
     ]
 
     return (
-        <div className="max-w-350 mx-auto">
-            <SectionTitle title="featured projects"></SectionTitle>
-            <div className="grid grid-cols-3 gap-9">
+        <div className="max-w-350 mx-auto lg:mt-32 xl:px-5 mt-20 lg:p-7 p-5 scroll-mt-24" id="projetcs">
+            <SectionTitle title="latest projects"></SectionTitle>
+            <div className="grid xl:grid-cols-3 lg:grid-cols-2 justify-center lg:gap-9 gap-6 md:gap-7 lg:mt-12 mt-9">
                 {
                     projectsData.map(project =>
-                        <div key={project.id} className="w-full flex flex-col h-full justify-between p-5 rounded-xl bg-[#212020]">
-                            <img className="w-full h-64 rounded-xl" src={project.img} alt="" />
+                        <div key={project.id} className="w-full flex flex-col md:flex-row lg:flex-col gap-8 h-full justify-between md:items-center p-5 rounded-xl bg-[#212020]">
+                            <img className="lg:w-full md:w-80 md:h-72 h-64 rounded-xl" src={project.img} alt="" />
                             <div className="mt-5">
                                 <h2 className="text-3xl font-bold">{project.name}</h2>
                                 <p className="pt-3 text-gray-400">{project.description}</p>

@@ -10,7 +10,7 @@ import TechCard from './components/TechCard'
 function App() {
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden">
+    <div className="min-h-screen bg-black text-white">
       <Navbar></Navbar>
       <Banner></Banner>
       <About></About>
