@@ -16,7 +16,7 @@ const Navbar = () => {
             {/* NAVBAR */}
             <nav className="relative flex items-center justify-between px-8 py-5 border-b border-white/5">
                 <div className="logo-font text-3xl font-bold" style={{ color: "#cc00ff" }}>
-                    Mohsin.
+                    mahin.
                 </div>
 
                 {/* Desktop nav */}

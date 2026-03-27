@@ -64,7 +64,7 @@ const techs = [
     {
         name: "Git",
         icon: (
-            <svg width="50" height="50" viewBox="0 0 97 97" xmlns="http://www.w3.org/2000/svg">
+            <svg width="35" height="50" viewBox="0 0 97 97" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#F05032" d="M92.71 44.41L52.59 4.29c-5.72-5.72-15-5.72-20.71 0l-8.32 8.32 10.54 10.54c2.45-.83 5.26-.27 7.18 1.66 1.94 1.94 2.49 4.79 1.62 7.25l10.16 10.16c2.46-.85 5.33-.3 7.28 1.66 2.72 2.72 2.72 7.13 0 9.85-2.72 2.72-7.13 2.72-9.85 0-2.05-2.05-2.55-5.08-1.5-7.61l-9.48-9.48v24.98c.67.33 1.3.77 1.83 1.3 2.72 2.72 2.72 7.13 0 9.85-2.72 2.72-7.13 2.72-9.85 0-2.72-2.72-2.72-7.13 0-9.85.67-.67 1.47-1.18 2.33-1.5V36.77c-.86-.32-1.66-.83-2.33-1.5-2.06-2.06-2.56-5.11-1.47-7.65L11.3 17.07 4.29 24.09c-5.72 5.72-5.72 15 0 20.71l40.12 40.12c5.72 5.72 15 5.72 20.71 0l27.59-27.59c5.72-5.72 5.72-15 0-20.71z" />
             </svg>
         ),
@@ -105,7 +105,7 @@ export default function TechCard() {
         <div className="bg-[#101010] lg:mt-1 md:mt-30 mt-20">
             <div className=" max-w-350 mx-auto py-14">
                 <SectionTitle title="tech stack"></SectionTitle>
-                <div className="pt-16">
+                <div className="pt-14">
                     <div className="grid grid-cols-9 gap-5">
                         {techs.map((tech) => (
                             <div className=" p-4 gap-2 flex flex-col"

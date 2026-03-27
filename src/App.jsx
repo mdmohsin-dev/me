@@ -1,8 +1,8 @@
-
 import './App.css'
 import Banner from './components/Banner'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
+import Projects from './components/Projects'
 import TechCard from './components/TechCard'
 
 function App() {
@@ -10,10 +10,9 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <Navbar></Navbar>
-      
-        <Banner></Banner>
-    
+      <Banner></Banner>
       <TechCard></TechCard>
+      <Projects></Projects>
       <Contact></Contact>
     </div>
   )

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { FaGithub, FaGoogle, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import avatar from "../assets/Avatar_250.jpg"
 import { SiGmail } from "react-icons/si";
 
@@ -26,9 +26,9 @@ const AnimatedRings = () => {
       const cy = canvas.height / 2;
 
       const rings = [
-        { rx: cx * 0.90, ry: cy * 0.90, color: "#cc00ff", speed: 0.5,  dotCount: 1, lineWidth: 1.5, alpha: 0.55 },
+        { rx: cx * 0.90, ry: cy * 0.90, color: "#cc00ff", speed: 0.5, dotCount: 1, lineWidth: 1.5, alpha: 0.55 },
         { rx: cx * 0.76, ry: cy * 0.76, color: "#6600cc", speed: -0.35, dotCount: 1, lineWidth: 1.2, alpha: 0.45 },
-        { rx: cx * 1.00, ry: cy * 1.00, color: "#ffffff", speed: 0.25,  dotCount: 2, lineWidth: 1.0, alpha: 0.20 },
+        { rx: cx * 1.00, ry: cy * 1.00, color: "#ffffff", speed: 0.25, dotCount: 2, lineWidth: 1.0, alpha: 0.20 },
       ];
 
       rings.forEach((ring) => {
@@ -268,9 +268,9 @@ export default function Portfolio() {
 
           {/* Social icons */}
           <div className="flex items-center gap-6 pt-2">
-            <FaGithub size={34}></FaGithub>
-            <FaLinkedin size={34}></FaLinkedin>
-           <a href="mailto:mdmohosin.web@gmail.com"><SiGmail size={34}></SiGmail></a>
+            <a href="https://github.com/mdmohsin-dev" target="_blank"><FaGithub size={34}></FaGithub></a>
+            <a href="https://www.linkedin.com/in/mdmohsin-dev/" target="_blank"><FaLinkedin size={34}></FaLinkedin></a>
+            <a href="mailto:mdmohosin.web@gmail.com"><SiGmail size={34}></SiGmail></a>
           </div>
         </div>
 
