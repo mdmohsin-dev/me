@@ -160,7 +160,7 @@ const ParticlesBg = () => {
 export default function Portfolio() {
 
   return (
-    <div className="md:mt-20 mt-10 border border-red-700" style={{ fontFamily: "'Sora', sans-serif" }}>
+    <div className="md:mt-20 mt-10 max-w-350 mx-auto" style={{ fontFamily: "'Sora', sans-serif" }}>
       {/* Google Font */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Dancing+Script:wght@700&display=swap');
@@ -231,7 +231,7 @@ export default function Portfolio() {
 
 
       {/* HERO */}
-      <main className="relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between min-h-[calc(100vh-72px)] px-8 md:px-20 py-16 gap-12">
+      <main className="relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between min-h-[calc(100vh-72px)] px-4 gap-12">
         {/* Left */}
         <div className="flex-1 flex flex-col gap-6 max-w-xl">
           {/* Subtle indicator */}
@@ -246,7 +246,7 @@ export default function Portfolio() {
               className="text-6xl md:text-8xl font-extrabold cursor-blink glow-text"
               style={{ background: "linear-gradient(135deg, #cc00ff 0%, #7700cc 50%, #aa00ff 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}
             >
-              mahin
+              Mohsin
             </h1>
           </div>
 

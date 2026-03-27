@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { FaDiscord, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import contactImg from "../assets/ContactVector.png"
+import SectionTitle from "./SectionTitle";
 
 const socialIcons = [
   {
@@ -102,42 +103,12 @@ export default function Contact() {
   };
 
   return (
-    <div className="border border-red-700 lg:mt-1 md:mt-30 mt-20">
+    <div className="max-w-350 mx-auto lg:mt-1 md:mt-30 mt-20">
 
-      <div className="flex items-center justify-center px-8">
-
-        <div className="flex items-center w-full max-w-4xl">
-          {/* Left line */}
-          <div
-            className="flex-1 h-px"
-            style={{
-              background: "linear-gradient(90deg, transparent 0%, #4f2bdb 40%, #6d3fff 100%)",
-              boxShadow: "0 0 8px #6d3fff55, 0 0 20px #4f2bdb33",
-            }}
-          />
-
-          {/* Center label */}
-          <div className="flex items-center gap-1 px-4">
-            <span className="text-3xl text-[#6d3fff] font-bold">{"<"}</span>
-            <span className="text-xl font-semibold tracking-[0.2em] uppercase px-1.5"> Contact</span>
-            <span className="text-[#4f2bdb] text-4xl font-bold">/</span>
-            <span className="text-[#6d3fff] text-3xl font-bold">{">"}</span>
-          </div>
-
-          {/* Right line */}
-          <div
-            className="flex-1 h-px"
-            style={{
-              background: "linear-gradient(90deg, #6d3fff 0%, #4f2bdb 60%, transparent 100%)",
-              boxShadow: "0 0 8px #6d3fff55, 0 0 20px #4f2bdb33",
-            }}
-          />
-        </div>
-      </div>
-
+      <SectionTitle title="Contact"></SectionTitle>
 
       <div
-        className="w-full flex items-center justify-between">
+        className="w-full flex items-center justify-between mt-6">
         <div className=" w-full px-6 py-12 flex flex-col lg:flex-row items-center justify-between gap-16">
           {/* LEFT — orbit */}
           <div
@@ -198,7 +169,7 @@ export default function Contact() {
               <div className="space-y-5">
                 {/* Name */}
                 <div>
-                  <label className="block text-white/60 text-xs font-semibold tracking-wider uppercase mb-2">
+                  <label className="block text-white text-xs font-semibold tracking-wider uppercase mb-2">
                     Name
                   </label>
                   <input

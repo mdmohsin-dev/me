@@ -8,6 +8,7 @@ const Navbar = () => {
         <li className="text-lg"><a href="">About</a></li>
         <li className="text-lg"><a href="">Skills</a></li>
         <li className="text-lg"><a href="">Projects</a></li>
+        <li className="text-lg"><a href="">Contact</a></li>
         <li className="text-lg md:hidden"><a href="">Download Resume</a></li>
     </>
     return (
@@ -15,16 +16,11 @@ const Navbar = () => {
             {/* NAVBAR */}
             <nav className="relative flex items-center justify-between px-8 py-5 border-b border-white/5">
                 <div className="logo-font text-3xl font-bold" style={{ color: "#cc00ff" }}>
-                    mahin.
+                    Mohsin.
                 </div>
 
                 {/* Desktop nav */}
                 <div className="hidden md:flex items-center gap-10">
-                    {/* {["ABOUT", "SKILLS", "PROJECTS", "CONTACT"].map((item) => (
-                        <a key={item} href="#" className="nav-link text-white/80 hover:text-white transition-colors">
-                            {item}
-                        </a>
-                    ))} */}
                     <ul className="flex gap-10">
                         {navLinks}
                     </ul>
@@ -49,13 +45,6 @@ const Navbar = () => {
 
             {/* Mobile menu */}
             {menuOpen && (
-                // <div className="md:hidden relative z-50 bg-black/95 border-b border-purple-900/30 px-8 py-6 flex flex-col gap-5">
-                //     {["ABOUT", "SKILLS", "PROJECTS", "CONTACT"].map((item) => (
-                //         <a key={item} href="#" className="text-sm font-semibold tracking-widest text-white/80 hover:text-purple-400 transition-colors">
-                //             {item}
-                //         </a>
-                //     ))}
-                // </div>
                 <ul className="flex flex-col gap-5 p-6">
                     {navLinks}
                 </ul>
