@@ -47,8 +47,8 @@ const Projects = () => {
                                 <h2 className="text-3xl font-bold">{project.name}</h2>
                                 <p className="pt-3 text-gray-400">{project.description}</p>
                                 <div className="flex justify-between mt-6">
-                                    <a className="btn bg-[#4f2bdb] w-2/4 flex items-center gap-2" href={project.live_link} target="_blank"><FaExternalLinkAlt size={18}></FaExternalLinkAlt> Live Link</a>
-                                    <a className="btn bg-[#4f2bdb]" href={project.github_link} target="_blank"><LuCodeXml size={26}></LuCodeXml></a>
+                                    <a className="btn bg-[#4f2bdb] w-2/4 flex items-center gap-2 transition-all duration-300 hover:-translate-y-1" href={project.live_link} target="_blank"><FaExternalLinkAlt size={18}></FaExternalLinkAlt> Live Link</a>
+                                    <a className="btn bg-[#4f2bdb] transition-all duration-300 hover:-translate-y-1" href={project.github_link} target="_blank"><LuCodeXml size={26}></LuCodeXml></a>
                                 </div>
                             </div>
                         </div>)
