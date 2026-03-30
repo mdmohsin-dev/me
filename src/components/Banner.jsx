@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import avatar from "../assets/Avatar_250.jpg"
+// import avatar from "../assets/Avatar_250.jpg"
+import me from "../assets/me.jpeg"
 import { SiGmail } from "react-icons/si";
 
 // Animated orbital rings component - SOLID borders with moving glowing dot
@@ -27,7 +28,7 @@ const AnimatedRings = () => {
 
       const rings = [
         { rx: cx * 0.90, ry: cy * 0.90, color: "#cc00ff", speed: 0.5, dotCount: 1, lineWidth: 1.5, alpha: 0.55 },
-        { rx: cx * 0.76, ry: cy * 0.76, color: "#6600cc", speed: -0.35, dotCount: 1, lineWidth: 1.2, alpha: 0.45 },
+        { rx: cx * 0.76, ry: cy * 0.76, color: "#6600cc", speed: -0.35, dotCount: 2, lineWidth: 1.2, alpha: 0.45 },
         { rx: cx * 1.00, ry: cy * 1.00, color: "#ffffff", speed: 0.25, dotCount: 2, lineWidth: 1.0, alpha: 0.20 },
       ];
 
@@ -37,7 +38,7 @@ const AnimatedRings = () => {
         ctx.strokeStyle = ring.color;
         ctx.lineWidth = ring.lineWidth;
         ctx.globalAlpha = ring.alpha;
-        ctx.setLineDash([]); // solid
+        // ctx.setLineDash([]); // solid
         ctx.beginPath();
         ctx.ellipse(cx, cy, ring.rx, ring.ry, 0, 0, Math.PI * 2);
         ctx.stroke();
@@ -269,18 +270,9 @@ export default function Portfolio() {
 
             {/* Profile image area */}
             <div className="profile-inner flex items-center justify-center">
-              {/* AI/tech face SVG placeholder */}
-              <img className="w-full" src={avatar} alt="" />
+              
+              <img className="w-full h-full" src={me} alt="" />
             </div>
-
-            {/* Outer glow */}
-            {/* <div
-              className="absolute inset-0 rounded-full pointer-events-none"
-              style={{
-                background: "radial-gradient(circle, transparent 55%, rgba(153,0,255,0.08) 100%)",
-                zIndex: 1,
-              }}
-            /> */}
           </div>
         </div>
       </main>
