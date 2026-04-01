@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 // import avatar from "../assets/Avatar_250.jpg"
 import me from "../assets/me.jpeg"
 import { SiGmail } from "react-icons/si";
+import { motion } from "framer-motion";
 
 // Animated orbital rings component - SOLID borders with moving glowing dot
 const AnimatedRings = () => {
@@ -171,47 +172,13 @@ export default function Portfolio() {
           color: #cc00ff;
         }
         @keyframes blink { 50% { opacity: 0 } }
-        .nav-link {
-          position: relative;
-          letter-spacing: 0.12em;
-          font-size: 0.75rem;
-          font-weight: 600;
-        }
-        .nav-link::after {
-          content: '';
-          position: absolute;
-          bottom: -4px; left: 0;
-          width: 0; height: 2px;
-          background: #cc00ff;
-          transition: width 0.3s;
-        }
-        .nav-link:hover::after { width: 100%; }
         
         .resume-btn {
           border: 1.5px solid #cc00ff;
           position: relative;
           overflow: hidden;
         }
-        .resume-btn::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(135deg, #cc00ff22, transparent);
-          opacity: 0;
-          transition: opacity 0.3s;
-        }
-        .resume-btn:hover::before { opacity: 1; }
         
-        .profile-inner {
-          position: absolute;
-          inset: 15%;
-          border-radius: 50%;
-          overflow: hidden;
-          background: radial-gradient(circle at 40% 40%, #2d0066, #0a0010);
-          border: 2px solid rgba(153,0,255,0.4);
-          z-index: 3;
-        }
-        .social-icon-wrap:hover svg { color: #cc00ff; }
       `}</style>
 
       {/* Particles background */}
@@ -263,18 +230,20 @@ export default function Portfolio() {
         </div>
 
         {/* Right - Animated avatar */}
-        <div className="flex items-center justify-center">
-          <div className="profile-img-container relative md:w-96 md:h-96 h-72 w-72">
+       <div>
+         <div className="flex items-center justify-center">
+          <div className="relative md:w-96 md:h-96 h-72 w-72">
             {/* Canvas rings animation */}
             <AnimatedRings />
 
             {/* Profile image area */}
-            <div className="profile-inner flex items-center justify-center">
+            <div className="absolute inset-[15%] z-3 rounded-full overflow-hidden flex items-center justify-center border-2 border-[rgba(153,0,255,0.4)]">
               
-              <img className="w-full h-full" src={me} alt="" />
+              <motion.img initial={{opacity:0,scale:0}} animate={{opacity:1,scale:1}} transition={{type:"spring",stiffness:100,delay:0.5}} className="w-full h-full" src={me} alt="" />
             </div>
           </div>
         </div>
+       </div>
       </main>
 
     </div>

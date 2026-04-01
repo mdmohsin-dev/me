@@ -41,9 +41,11 @@ const Projects = () => {
             <div className="grid xl:grid-cols-3 lg:grid-cols-2 justify-center lg:gap-9 gap-6 md:gap-7 lg:mt-12 mt-9">
                 {
                     projectsData.map(project =>
-                        <div key={project.id} className="w-full flex flex-col md:flex-row lg:flex-col gap-8 h-full justify-between md:items-center p-5 rounded-xl bg-[#212020]">
-                            <img className="lg:w-full md:w-80 md:h-72 h-64 rounded-xl" src={project.img} alt="" />
-                            <div className="mt-5">
+                        <div key={project.id} className="w-full flex flex-col md:flex-row lg:flex-col gap-8 h-full justify-between md:items-center  rounded-xl bg-[#212020] overflow-hidden group cursor-pointer">
+                            <div className="w-full overflow-hidden">
+                                <img className="lg:w-full md:w-80 md:h-72 h-64 rounded-t-xl object-cover transition-transform duration-500 group-hover:scale-110" src={project.img} alt="" />
+                            </div>
+                            <div className="px-5 pb-5">
                                 <h2 className="text-3xl font-bold">{project.name}</h2>
                                 <p className="pt-3 text-gray-400">{project.description}</p>
                                 <div className="flex justify-between mt-6">
