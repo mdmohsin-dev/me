@@ -1,7 +1,7 @@
 import SectionTitle from "./SectionTitle";
 import lawyerImg from "../assets/lawyer.png"
 import boipoka from "../assets/boipoka.png"
-import bpl from "../assets/bpl.png"
+import elite from "../assets/eliteArena.png"
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { LuCodeXml } from "react-icons/lu";
 
@@ -11,6 +11,15 @@ const Projects = () => {
     const projectsData = [
         {
             id: 1,
+            name: "Elite Arena",
+            img: elite,
+            description: "A responsive sports booking app with authentication, allowing users to browse and reserve multiple grounds easily.",
+            live_link: "https://elite-arena-two.vercel.app/",
+            github_link: "https://github.com/mdmohsin-dev/elite-arena",
+        },
+
+        {
+            id: 2,
             name: "Law.BD",
             img: lawyerImg,
             description: "A lawyer appointment booking web application where users can explore lawyer profiles, check availability....",
@@ -18,20 +27,12 @@ const Projects = () => {
             github_link: "https://github.com/mdmohsin-dev/lawyer-bd",
         },
         {
-            id: 2,
+            id: 3,
             name: "Boi poka",
             img: boipoka,
             description: "A React web app for browsing books, viewing details, and managing read list and wishlist with sorting by rating and....",
             live_link: "https://boi-poka-roan.vercel.app/",
             github_link: "https://github.com/mdmohsin-dev/boi-poka",
-        },
-        {
-            id: 3,
-            name: "BPL dream 11",
-            img: bpl,
-            description: "Fantasy cricket web app where users can claim coins and select players based on their price.....",
-            live_link: "https://bpl-dream-11-delta.vercel.app/",
-            github_link: "https://github.com/mdmohsin-dev/BPL-dream-11",
         }
     ]
 

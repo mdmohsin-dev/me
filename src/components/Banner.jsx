@@ -213,6 +213,7 @@ export default function Portfolio() {
             >
               Mohsin
             </h1>
+            <p>I am a junior web developer specializing in React, JavaScript, and TailwindCSS. I build responsive and interactive web applications. I continuously build practical projects and learn modern web technologies.</p>
           </div>
 
           <div className="space-y-1">
