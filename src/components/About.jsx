@@ -33,7 +33,7 @@ const About = () => {
                             <div className="text-center mb-10">
                                 <h1 className="text-3xl font-bold text-white mb-1">MOHSIN</h1>
                                 <div className="text-emerald-400 text-sm font-medium tracking-wider">
-                                    FRONTEND DEVELOPER
+                                     MERN Stack Developer
                                 </div>
                             </div>
 
@@ -68,7 +68,7 @@ const About = () => {
                                 <span className="text-cyan-400 font-medium">whoami</span>
                             </div>
                             <p className="text-gray-300 leading-relaxed pl-6">
-                                Frontend Developer with a strong focus on building modern, scalable, and user-friendly web applications. Skilled in JavaScript, React, and Tailwind CSS, with experience integrating REST APIs and implementing secure authentication systems using Firebase. Passionate about creating clean, efficient, and high-performance user interfaces.
+                               MERN Stack Developer with a strong focus on building modern, scalable, and user-friendly web applications. Skilled in JavaScript, React, Node.js, Express, and MongoDB, with experience implementing secure authentication systems using Firebase and JWT. Passionate about creating clean, efficient, and high-performance full-stack solutions.
                             </p>
                         </div>
 
@@ -79,7 +79,7 @@ const About = () => {
                                 <span className="text-cyan-400 font-medium">cat mission.txt</span>
                             </div>
                             <p className="text-gray-300 leading-relaxed pl-6">
-                                My mission is to build scalable and user-focused web applications that solve real-world problems. While crafting modern frontend experiences, I am growing into a full-stack developer by learning backend systems, authentication, and databases, aiming to deliver clean and efficient solutions.
+                                My mission is to build scalable and user-focused web applications that solve real-world problems. As a MERN Stack Developer, I continuously expand my expertise in backend systems, authentication, and databases while crafting modern frontend experiences. I aim to deliver clean, efficient, and high-performance full-stack solutions.
                             </p>
                         </div>
                        

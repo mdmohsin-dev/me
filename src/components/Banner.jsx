@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import me from "../assets/me.jpeg"
 import { SiGmail } from "react-icons/si";
 import { motion } from "framer-motion";
+import AnimationTitle from "./AnimationTitle";
 
 // Animated orbital rings component - SOLID borders with moving glowing dot
 const AnimatedRings = () => {
@@ -162,10 +163,10 @@ const ParticlesBg = () => {
 export default function Portfolio() {
 
   return (
-    <div className="lg:pt-10 pt-28 max-w-350 mx-auto px-5" id="home" style={{ fontFamily: "'Sora', sans-serif" }}>
+    <div className="lg:pt-10 pt-28 max-w-350 mx-auto px-5" id="home">
       {/* Google Font */}
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Dancing+Script:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
         .logo-font { font-family: 'Dancing Script', cursive; }
         .cursor-blink::after {
           animation: blink 0.8s step-end infinite;
@@ -213,14 +214,14 @@ export default function Portfolio() {
             >
               Mohsin
             </h1>
-            <p>I am a junior web developer specializing in React, JavaScript, and TailwindCSS. I build responsive and interactive web applications. I continuously build practical projects and learn modern web technologies.</p>
-          </div>
 
-          <div className="space-y-1">
-            <p className="text-white text-lg font-light">
-              <span className="font-semibold text-white">Frontend Developer.</span>
+            <div><AnimationTitle></AnimationTitle></div>
+
+            <p className="pt-5">
+              I am a MERN Stack developer specializing in React, JavaScript, MongoDB, and Express.js. I focus on building responsive, interactive, and scalable web applications while continuously improving my skills through real-world projects and modern web technologies.
             </p>
           </div>
+
 
           {/* Social icons */}
           <div className="flex items-center gap-6 pt-2">
@@ -231,20 +232,20 @@ export default function Portfolio() {
         </div>
 
         {/* Right - Animated avatar */}
-       <div>
-         <div className="flex items-center justify-center">
-          <div className="relative md:w-96 md:h-96 h-72 w-72">
-            {/* Canvas rings animation */}
-            <AnimatedRings />
+        <div>
+          <div className="flex items-center justify-center">
+            <div className="relative md:w-96 md:h-96 h-72 w-72">
+              {/* Canvas rings animation */}
+              <AnimatedRings />
 
-            {/* Profile image area */}
-            <div className="absolute inset-[15%] z-3 rounded-full overflow-hidden flex items-center justify-center border-2 border-[rgba(153,0,255,0.4)]">
-              
-              <motion.img initial={{opacity:0,scale:0}} animate={{opacity:1,scale:1}} transition={{type:"spring",stiffness:100,delay:0.5}} className="w-full h-full" src={me} alt="" />
+              {/* Profile image area */}
+              <div className="absolute inset-[15%] z-3 rounded-full overflow-hidden flex items-center justify-center border-2 border-[rgba(153,0,255,0.4)]">
+
+                <motion.img initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: "spring", stiffness: 100, delay: 0.5 }} className="w-full h-full" src={me} alt="" />
+              </div>
             </div>
           </div>
         </div>
-       </div>
       </main>
 
     </div>
