@@ -1,119 +1,116 @@
+
+import { motion } from "framer-motion";
+import {
+    SiJavascript, SiReact, SiNextdotjs, SiTypescript,
+    SiTailwindcss, SiPrisma, SiNodedotjs, SiExpress,
+    SiRedux, SiPostgresql, SiMongodb, SiMongoose, SiFirebase,
+} from "react-icons/si";
 import SectionTitle from "./SectionTitle";
-import mongodbIcon from "../assets/skills-icon/mongodb.png"
-import reactIcon from "../assets/skills-icon/react.png"
-import jsIcon from "../assets/skills-icon/js.jpg"
-import tailwindIcon from "../assets/skills-icon/tailwind.png"
-import expressIcon from "../assets/skills-icon/express-js.jpg"
-import nodejsIcon from "../assets/skills-icon/node.png"
-import firebaseIcon from "../assets/skills-icon/firebase.png"
-import htmlIcon from "../assets/skills-icon/html.webp"
-import githubIcon from "../assets/skills-icon/github.png"
-import gitIcon from "../assets/skills-icon/git.png"
-import cssIcon from "../assets/skills-icon/CSS.png"
-
-const techs = [
-    {
-        name: "HTML",
-        image: htmlIcon,
-        size: {
-            width: "58px", height: "58px"
-        }
-    },
-    {
-        name: "CSS",
-        image: cssIcon,
-        size: {
-            width: "50px", height: "50px"
-        }
-    },
-    {
-        name: "Javascript",
-        image: jsIcon,
-        size: {
-            width: "50px", height: "50px"
-        }
-    },
-    {
-        name: "React",
-        image: reactIcon,
-        size: {
-            width: "55px", height: "55px"
-        }
-    },
-    {
-        name: "Tailwind CSS",
-        image: tailwindIcon,
-        size: {
-            width: "55px", height: "55px"
-        }
-    },
-    {
-        name: "NodeJs",
-        image: nodejsIcon,
-        size: {
-            width: "55px", height: "55px"
-        }
-    },
-    {
-        name: "MongoDB",
-        image: mongodbIcon,
-        size: {
-            width: "55px", height: "55px"
-        }
-    },
-    {
-        name: "ExpressJs",
-        image: expressIcon,
-        size: {
-            width: "55px", height: "55px"
-        }
-    },
-    {
-        name: "Firebase",
-        image: firebaseIcon,
-        size: {
-            width: "55px", height: "55px"
-        }
-    },
-
-    {
-        name: "Github",
-         image: githubIcon,
-        size: {
-            width: "55px", height: "55px"
-        }
-    },
-    {
-        name: "Git",
-        image: gitIcon,
-        size: {
-            width: "55px", height: "55px"
-        }
-    },
-
-];
-
-
 export default function TechCard() {
 
+    const skills = [
+        { skill: "Javascript", level: "Advanced", Icon: SiJavascript, color: "#F7DF1E" },
+        { skill: "React", level: "Advanced", Icon: SiReact, color: "#61DAFB" },
+        { skill: "TypeScript", level: "Intermediate", Icon: SiTypescript, color: "#3178C6" },
+        { skill: "Tailwind CSS", level: "Advanced", Icon: SiTailwindcss, color: "#06B6D4" },
+        { skill: "NodeJS", level: "Advanced", Icon: SiNodedotjs, color: "#339933" },
+        { skill: "ExpressJS", level: "Advanced", Icon: SiExpress, color: "#828282" },
+        { skill: "MongoDB", level: "Advanced", Icon: SiMongodb, color: "#47A248" },
+        { skill: "Firebase", level: "Intermediate", Icon: SiFirebase, color: "#FFCA28" },
+    ];
+
+    // Animation Variants
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.1 },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { y: 20, opacity: 0 },
+        visible: { y: 0, opacity: 1 },
+    };
+
     return (
-        <div className="bg-[#101010] mt-32 scroll-mt-24" id="skills">
+        <div className="mt-32 scroll-mt-24" id="skills">
             <div className="max-w-350 mx-auto py-14">
                 <SectionTitle title="tech stack"></SectionTitle>
-                <div className="lg:pt-14 md:pt-10 pt-6">
-                    <div className="grid lg:grid-cols-9 md:grid-cols-6 grid-cols-3 gap-5">
-                        {techs.map((tech) => (
-                            <div className=" p-4 gap-2 flex flex-col justify-center items-center"
-                                key={tech.name}>
-                                <img src={tech.image} style={{ width: tech.size?.width, height: tech.size?.height }} className="rounded-lg" alt="" />
-                                <span className="text-[15px] font-semibold text-white text-center" >
-                                    {tech.name}
-                                </span>
-                            </div>
-                        ))}
+                <section className="relative">
+
+                    {/* Background Glows */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px]  blur-[120px] rounded-full -z-10"></div>
+
+                    <div className="max-w-7xl mx-auto">
+                        {/* Section Header */}
+                        <motion.div
+                            initial={{ opacity: 0, y: -20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="text-center mb-16"
+                        >
+                        </motion.div>
+
+                        {/* Skills Grid */}
+                        <motion.div
+                            variants={containerVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8"
+                        >
+                            {skills.map((item, index) => (
+                                <motion.div
+                                    key={index}
+                                    variants={itemVariants}
+                                    whileHover={{
+                                        scale: 1.05,
+                                        rotate: [0, -2, 2, 0],
+                                        transition: { duration: 0.3 }
+                                    }}
+                                    className="group relative p-6 rounded-2xl bg-[#0F0F0F] backdrop-blur-sm flex flex-col items-center justify-center gap-4 transition-all hover:shadow-xl hover:shadow-primary/5"
+                                >
+                                    {/* Floating Glow Effect on Hover */}
+                                    <div
+                                        className="absolute inset-0 opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 rounded-2xl -z-10"
+                                        style={{ backgroundColor: item.color }}
+                                    ></div>
+
+                                    {/* Icon Container */}
+                                    <div className="text-5xl transition-transform duration-300 group-hover:scale-110" style={{ color: item.color }}>
+                                        <item.Icon />
+                                    </div>
+
+                                    {/* Skill Info */}
+                                    <div className="text-center">
+                                        <h3 className="font-bold text-sm sm:text-base tracking-wide">{item.skill}</h3>
+
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </motion.div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -218,7 +218,7 @@ export default function Portfolio() {
             <div><AnimationTitle></AnimationTitle></div>
 
             <p className="pt-5">
-              I am a MERN Stack developer specializing in React, JavaScript, MongoDB, and Express.js. I focus on building responsive, interactive, and scalable web applications while continuously improving my skills through real-world projects and modern web technologies.
+              I am a Full Stack developer specializing in React, JavaScript, MongoDB, and Express.js. I focus on building responsive, interactive, and scalable web applications while continuously improving my skills through real-world projects and modern web technologies.
             </p>
           </div>
 

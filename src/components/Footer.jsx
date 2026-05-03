@@ -12,7 +12,7 @@ const Footer = () => {
                         <img className='w-16 h-16 rounded-full' src={me} alt="" />
                         <div>
                             <h3 className='text-3xl bg-linear-to-r from-[#cc00ff] via-[#7700cc] to-[#aa00ff] bg-clip-text text-transparent font-semibold'>Mohsin</h3>
-                            <p>MERN stack developer</p>
+                            <p>Full stack developer</p>
                         </div>
                     </div>
 
