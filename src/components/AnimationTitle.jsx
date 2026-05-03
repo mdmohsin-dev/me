@@ -5,8 +5,7 @@ import reactIcon from "../assets/skills-icon/react.png"
 import expressIcon from "../assets/skills-icon/express-js.jpg"
 
 const items = [
-  { text: "MERN Stack Developer", icon: mongodbIcon },
-  { text: "Full Stack Developer", icon: expressIcon },
+  { text: "Full Stack Developer", icon: mongodbIcon },
   { text: "Frontend Developer", icon: reactIcon },
 ];
 
@@ -121,7 +120,7 @@ export default function AnimationTitle() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <span className="text-3xl font-semibold text-violet-400 whitespace-nowrap">
+          <span className="text-2xl font-semibold text-violet-400 whitespace-nowrap">
             {displayText}
           </span>
 

@@ -44,7 +44,7 @@ const Projects = () => {
                     projectsData.map(project =>
                         <div key={project.id} className="w-full flex flex-col md:flex-row lg:flex-col gap-8 h-full justify-between md:items-center  rounded-xl bg-[#212020] overflow-hidden group cursor-pointer">
                             <div className="w-full overflow-hidden">
-                                <img className="lg:w-full md:w-80 md:h-72 h-64 rounded-t-xl object-cover transition-transform duration-500 group-hover:scale-110" src={project.img} alt="" />
+                                <img className="lg:w-full md:w-80 w-full md:h-72 h-64 rounded-t-xl object-cover transition-transform duration-500 group-hover:scale-110" src={project.img} alt="" />
                             </div>
                             <div className="px-5 pb-5">
                                 <h2 className="text-3xl font-bold">{project.name}</h2>

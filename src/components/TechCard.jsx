@@ -35,15 +35,13 @@ export default function TechCard() {
 
     return (
         <div className="mt-32 scroll-mt-24" id="skills">
-            <div className="max-w-350 mx-auto py-14">
+            <div className="max-w-350 mx-auto py-14 px-6">
                 <SectionTitle title="tech stack"></SectionTitle>
                 <section className="relative">
 
-                    {/* Background Glows */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px]  blur-[120px] rounded-full -z-10"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px]  blur-[120px] rounded-full -z-10"></div>
 
-                    <div className="max-w-7xl mx-auto">
-                        {/* Section Header */}
+                    <div className="mx-auto">
                         <motion.div
                             initial={{ opacity: 0, y: -20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +50,6 @@ export default function TechCard() {
                         >
                         </motion.div>
 
-                        {/* Skills Grid */}
                         <motion.div
                             variants={containerVariants}
                             initial="hidden"
