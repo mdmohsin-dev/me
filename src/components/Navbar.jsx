@@ -4,7 +4,7 @@ import { useState } from "react";
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const navLinks = <>
-        <li className="text-lg"><a href="#home">Home</a></li>
+        <li className="text-lg cursor-none"><a href="#home">Home</a></li>
         <li className="text-lg"><a href="#about">About</a></li>
         <li className="text-lg"><a href="#skills">Skills</a></li>
         <li className="text-lg"><a href="#projetcs">Projects</a></li>
