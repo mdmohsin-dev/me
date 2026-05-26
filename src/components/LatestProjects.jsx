@@ -583,6 +583,7 @@
 
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import SectionTitle from "./SectionTitle";
 
 const PROJECTS = [
   {
@@ -635,7 +636,7 @@ const PROJECTS = [
   },
 ];
 
-const PEEK = 54;
+const PEEK = 55;
 const SCROLL_PER = 520;
 const SCALE_MAX = 0.055;
 const DIM_MAX = 0.28;
@@ -667,9 +668,9 @@ const ProjectCard = React.forwardRef(({ project, style }, ref) => {
     <article
       ref={ref}
       style={style}
-      className="absolute border border-red-500 mt-40 left-0 right-0 overflow-hidden rounded-[20px]  bg-[#1a1a1f] will-change-transform"
+      className="absolute h-screen mt-10 left-0 right-0 overflow-hidden rounded-lg"
     >
-      <div className="grid md:grid-cols-[5fr_6fr]">
+      <div className="grid md:grid-cols-[5fr_6fr] bg-black rounded-lg border border-[#C8FF57]">
         <div className="relative overflow-hidden">
           <img
             src={project.image}
@@ -874,9 +875,10 @@ const LatestProjects = () => {
   }, [compute, onScroll]);
 
   return (
-    <section className="bg-[#0a0a0c] text-white border border-blue-600">
+    <section className="text-white scroll-mt-24 mt-40">
+      <SectionTitle title={'latest projects'}></SectionTitle>
       <div ref={outerRef} className="relative mx-auto max-w-6xl px-6">
-        <div className="sticky top-0 flex  items-end overflow-hidden">
+        <div className="sticky top-24 flex  items-end overflow-hidden">
           <div ref={sceneRef} className="relative w-full">
             {PROJECTS.map((project, i) => (
               <ProjectCard
