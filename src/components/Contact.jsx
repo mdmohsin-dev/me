@@ -97,7 +97,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-350 mx-auto lg:mt-32 md:mt-30 mt-20 scroll-mt-24" id="contact">
+    <div className="max-w-350 mx-auto scroll-mt-24" id="contact">
 
       <SectionTitle title="Contact"></SectionTitle>
 
