@@ -31,26 +31,14 @@ const PROJECTS = [
   {
     id: 2,
     num: "03",
-    year: "2023",
-    title: "Scribe — AI\nWriting Assistant",
-    desc: "An intelligent writing tool using LLMs to suggest edits and restructure arguments.",
-    tags: ["Python", "FastAPI", "OpenAI", "AI"],
-    meta: "Open source · 2.3k GitHub stars",
-    image:
-      "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=900&q=80",
+    year: "2024",
+    title: "SwiftMove\n Courier management system",
+    desc: "A full-stack courier management system for parcel delivery, rider management, and real-time delivery tracking.",
+    tags: ["React", "JavaScript", "Express", "MongoDB"],
+    image: swift,
     accent: "#c8ff57",
-  },
-  {
-    id: 3,
-    num: "04",
-    year: "2023",
-    title: "Nest — Smart\nHome Controller",
-    desc: "A unified smart-home dashboard connecting devices across ecosystems.",
-    tags: ["Vue 3", "Node.js", "WebSockets", "IoT"],
-    meta: "Side project · Personal use",
-    image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80",
-    accent: "#c8ff57",
+    liveLink: "https://swift-move-b007b.web.app/",
+    githubLink: "https://github.com/mdmohsin-dev/swift-move-client"
   },
 ];
 

@@ -18,7 +18,7 @@ function App() {
       <Banner></Banner>
       <About></About>
       <TechCard></TechCard>
-      <Projects></Projects>
+      {/* <Projects></Projects> */}
       <LatestProjects></LatestProjects>
       <Contact></Contact>
       <Footer></Footer>
