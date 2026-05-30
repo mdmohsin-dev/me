@@ -16,7 +16,9 @@ export default function TechCard() {
         { skill: "NodeJS", level: "Advanced", Icon: SiNodedotjs, color: "#339933" },
         { skill: "ExpressJS", level: "Advanced", Icon: SiExpress, color: "#828282" },
         { skill: "MongoDB", level: "Advanced", Icon: SiMongodb, color: "#47A248" },
-        { skill: "Firebase", level: "Intermediate", Icon: SiFirebase, color: "#FFCA28" },
+        { skill: "Prisma", level: "Intermediate", Icon: SiPrisma, color: "#2D3748" },
+        { skill: "PostgreSQL", level: "Intermediate", Icon: SiPostgresql, color: "#336791" },
+        {skill:"NextJS", level:"Intermediate", Icon: SiNextdotjs, color:"#000000"},
     ];
 
     // Animation Variants
