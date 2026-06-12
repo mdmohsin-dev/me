@@ -19,7 +19,7 @@ const socialIcons = [
     label: (
       <FaLinkedin size={24}></FaLinkedin>
     ),
-    href: "https://www.linkedin.com/in/mdmohsin-dev/"
+    href: "https://www.linkedin.com/in/dev-md-mohsin"
   },
   {
     id: "discord",
@@ -97,7 +97,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-350 mx-auto scroll-mt-24" id="contact">
+    <div className="max-w-350 mx-auto scroll-mt-24 lg:mt-32" id="contact">
 
       <SectionTitle title="Contact"></SectionTitle>
 

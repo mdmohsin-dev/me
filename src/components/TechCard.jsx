@@ -1,10 +1,10 @@
-
 import { motion } from "framer-motion";
 import {
     SiJavascript, SiReact, SiNextdotjs, SiTypescript,
     SiTailwindcss, SiPrisma, SiNodedotjs, SiExpress,
-    SiRedux, SiPostgresql, SiMongodb, SiMongoose, SiFirebase,
+    SiRedux, SiPostgresql, SiMongodb, SiMongoose, SiFirebase,SiShadcnui
 } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 import SectionTitle from "./SectionTitle";
 export default function TechCard() {
 
@@ -14,11 +14,12 @@ export default function TechCard() {
         { skill: "TypeScript", level: "Intermediate", Icon: SiTypescript, color: "#3178C6" },
         { skill: "Tailwind CSS", level: "Advanced", Icon: SiTailwindcss, color: "#06B6D4" },
         { skill: "NodeJS", level: "Advanced", Icon: SiNodedotjs, color: "#339933" },
-        { skill: "ExpressJS", level: "Advanced", Icon: SiExpress, color: "#828282" },
+        { skill: "ExpressJS", level: "Advanced", Icon: SiExpress, color: "#ffffff" },
         { skill: "MongoDB", level: "Advanced", Icon: SiMongodb, color: "#47A248" },
-        { skill: "Prisma", level: "Intermediate", Icon: SiPrisma, color: "#2D3748" },
-        { skill: "PostgreSQL", level: "Intermediate", Icon: SiPostgresql, color: "#336791" },
-        {skill:"NextJS", level:"Intermediate", Icon: SiNextdotjs, color:"#000000"},
+        { skill: "Prisma", level: "Intermediate", Icon: SiPrisma, color: "#ffffff" },
+        { skill: "PostgreSQL", level: "Intermediate", Icon: BiLogoPostgresql, color: "#3178C6" },
+        {skill:"NextJS", level:"Intermediate", Icon: SiNextdotjs, color:"#ffffff"},
+        {skill:"Shadcn", level:"Intermediate", Icon: SiShadcnui, color:"#ffffff"},
     ];
 
     // Animation Variants
